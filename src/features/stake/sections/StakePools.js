@@ -34,35 +34,16 @@ export default function StakePools(props) {
   }, [fetchPoolsInfo]);
 
   return (
-    <Grid container style={{paddingTop: '4px'}}>
+    <Grid container style={{paddingTop: '54px'}}>
       <Grid item xs={12}>
         <div className={classes.mainTitle}>{t('Stake-Main-Title')}</div>
-        <h3 className={classes.secondTitle}>{t('Stake-Second-Title')}</h3>
+        <h3 className={classes.secondTitle}> </h3>
       </Grid>
       {
         fromPage == 'page' && 
         <Hidden xsDown>
           <GridItem>
-            <div className={classes.listHeader}>
-              <img className={classes.leftImage} src={leftImage} />
-              <img className={classes.rightImage} src={rightImage} />
-              <div className={classes.mainTitle}>{t('Stake-List-Header-Main')}</div>
-              <GridContainer >
-                <GridItem className={classNames({
-                  [classes.flexBox]:true,
-                  [classes.marginTop]:true,
-                })}>
-                  <div className={classes.secondTitle}>{t('Stake-List-Header-Sub')}</div>
-                  <CustomButtons
-                    href={t("Stake-Pools-Learn-More")}
-                    target="_blank"
-                    className={classes.learnMoreButton}
-                  >
-                    {t('Stake-Learn-More')}
-                  </CustomButtons>
-                </GridItem>
-              </GridContainer>
-            </div>
+            
           </GridItem>
         </Hidden>
       }

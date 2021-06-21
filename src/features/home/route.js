@@ -1,7 +1,7 @@
 import { HomePage } from './';
 
 export default {
-  path: '',
+  path: '/home',
   childRoutes: [
     { path: 'index', component: HomePage, isIndex: true },
   ],

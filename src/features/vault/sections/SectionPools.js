@@ -267,7 +267,7 @@ export default function SectionPools() {
     <Grid container style={{paddingTop: '4px'}}>
       <Grid item xs={12}>
         <div className={classes.mainTitle}>{t('Vault-Main-Title')}</div>
-        <h3 className={classes.secondTitle}>{t('Vault-Second-Title')}</h3>
+        <h3 className={classes.secondTitle}> </h3>
       </Grid>
       
         {Boolean(networkId === Number(process.env.NETWORK_ID)) && pools.map((pool, index) => {
@@ -419,8 +419,8 @@ export default function SectionPools() {
                                     <div className={classes.showDetailButtonCon}>
                                         <Button 
                                             style={{
-                                                backgroundColor:'#353848',
-                                                color:'#FF2D82',
+                                                backgroundColor:'#661AFF',
+                                                color:'#fff',
                                                 boxShadow:'0 2px 2px 0 rgba(53, 56, 72, 0.14), 0 3px 1px -2px rgba(53, 56, 72, 0.2), 0 1px 5px 0 rgba(53, 56, 72, 0.12)',
                                                 fontWeight: "bold"
                                             }}
@@ -439,8 +439,8 @@ export default function SectionPools() {
                                                 margin: '12px 5px',
                                                 fontSize: '14px',
                                                 fontWeight:'bold',
-                                                backgroundColor:'#353848',
-                                                color:'#FF2D82',
+                                                backgroundColor:'#661AFF',
+                                                color:'#fff',
                                                 boxShadow:'0 2px 2px 0 rgba(53, 56, 72, 0.14), 0 3px 1px -2px rgba(53, 56, 72, 0.2), 0 1px 5px 0 rgba(53, 56, 72, 0.12)'
                                             }}
                                             round
@@ -457,8 +457,8 @@ export default function SectionPools() {
                                                 margin: '12px 5px',
                                                 fontSize: '14px',
                                                 fontWeight:'bold',
-                                                backgroundColor:'#353848',
-                                                color:'#FF2D82',
+                                                backgroundColor:'#661AFF',
+                                                color:'#fff',
                                                 boxShadow:'0 2px 2px 0 rgba(53, 56, 72, 0.14), 0 3px 1px -2px rgba(53, 56, 72, 0.2), 0 1px 5px 0 rgba(53, 56, 72, 0.12)'
                                             }}
                                             round
@@ -501,8 +501,8 @@ export default function SectionPools() {
                                     margin: '12px 5px',
                                     fontSize: '14px',
                                     fontWeight:'bold',
-                                    backgroundColor:'#353848',
-                                    color:'#635AFF',
+                                    backgroundColor:'#661AFF',
+                                    color:'#fff',
                                     boxShadow:'0 2px 2px 0 rgba(53, 56, 72, 0.14), 0 3px 1px -2px rgba(53, 56, 72, 0.2), 0 1px 5px 0 rgba(53, 56, 72, 0.12)'
                                 }}
                                 round
@@ -519,8 +519,8 @@ export default function SectionPools() {
                                     margin: '12px 5px',
                                     fontSize: '14px',
                                     fontWeight:'bold',
-                                    backgroundColor:'#353848',
-                                    color:'#635AFF',
+                                    backgroundColor:'#661AFF',
+                                    color:'#fff',
                                     boxShadow:'0 2px 2px 0 rgba(53, 56, 72, 0.14), 0 3px 1px -2px rgba(53, 56, 72, 0.2), 0 1px 5px 0 rgba(53, 56, 72, 0.12)',
                                 }}
                                 round

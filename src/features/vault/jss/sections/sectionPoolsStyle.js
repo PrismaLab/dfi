@@ -10,13 +10,13 @@ import {
 import checkboxes from "assets/jss/material-kit-pro-react/customCheckboxRadioSwitchStyle.js";
 import buttonGroup from "assets/jss/material-kit-pro-react/buttonGroupStyle.js";
 import tooltips from "assets/jss/material-kit-pro-react/tooltipsStyle.js";
-import { rgbToHex } from "@material-ui/core";
+// import { rgbToHex } from "@material-ui/core";
 
 const secondStyle = {
   opacity: '0.4',
   fontFamily: 'Helvetica',
   fontSize: '14px',
-  color: '#FFFFFF',
+  color: '#121B21',
   letterSpacing: '0',
   lineHeight: '14px',
 };
@@ -25,7 +25,7 @@ const sectionPoolsStyle = theme => ({
   mainTitle:{
     fontFamily: 'Helvetica',
     fontSize: '32px',
-    color: '#FFFFFF',
+    color: '#121B21',
     letterSpacing: '0',
     lineHeight: '32px',
     fontWeight: "550",
@@ -48,6 +48,9 @@ const sectionPoolsStyle = theme => ({
   details: {
     display: 'flex',
     alignItems: 'center',
+    background: '#F2F2F2',
+    boxShadow: '0 4px 8px 0 rgba(0,0,0,0.06)',
+    borderRadius: '8px',
   },
   column: {
     flexBasis: '33.33%',
@@ -138,7 +141,7 @@ const sectionPoolsStyle = theme => ({
   iconContainerMainTitle:{
     fontSize: '18px',
     fontWeight: 'bold',
-    color: '#fff',
+    color: '#121B21',
     lineHeight: '18px',
     // marginBottom:'8px',
     letterSpacing: 0,
@@ -146,7 +149,7 @@ const sectionPoolsStyle = theme => ({
   iconContainerSubTitle:{
     fontSize: '14px',
     fontWeight: '400',
-    color: '#fff',
+    color: '#121B21',
     lineHeight: '14px',
     opacity: "0.4",
     letterSpacing: 0
@@ -154,15 +157,15 @@ const sectionPoolsStyle = theme => ({
   iconContainerSecond: {
       width:'48px',
       height:'48px',
-      backgroundColor:'#353848',
+      backgroundColor:primaryColor[0],
       borderRadius:'8px',
-      color:primaryColor[0],
+      color: '#fff',
       
       "& i": {
         fontSize: '24px',
       },
       "&:hover,&:focus": {
-        backgroundColor: hoverColor[1],
+        backgroundColor: hoverColor[0],
       }
   },
   iconContainerPrimary: {
@@ -179,16 +182,10 @@ const sectionPoolsStyle = theme => ({
       }
   },
     accordion:{
-        backgroundColor:'#2C3040',
+        backgroundColor:'#F2F2F2',
         color:'#fff',
         boxShadow: '0px 4px 8px 0px rgba(0, 0, 0, 0.06)',
         borderRadius: '8px',
-    },
-    details:{
-      // padding: '12px 0',
-      background: '#2C3040',
-      boxShadow: '0 4px 8px 0 rgba(0,0,0,0.06)',
-      borderRadius: '8px',
     },
     track: {
           height: 4,
@@ -203,13 +200,12 @@ const sectionPoolsStyle = theme => ({
         justifyContent:'space-around',
         width:'100%',
         height: '56px',
-        background: '#353848',
+        background: '#F2F2F2',
         borderRadius: '12px',
         fontWeight: '600',
         fontSize: '18px',
-        color: '#FFFFFF',
+        color: '#121B21',
         lineHeight: '24px',
-        fontWeight: '600',
     },
     depositedBalanceSliderRoot:{
         color:'#FF2D82',
@@ -227,7 +223,7 @@ const sectionPoolsStyle = theme => ({
         float: 'left',
         margin: '16px 24px',
         fontSize: '18px',
-        color: '#FFFFFF',
+        color: '#121B21',
         lineHeight: '24px',
         fontWeight: '600',
     },
@@ -235,7 +231,7 @@ const sectionPoolsStyle = theme => ({
         float: 'right',
         fontSize: '12px',
         lineHeight: '18px',
-        color: '#FFFFFF',
+        color: '#121B21',
         opacity: '.4',
         fontWeight: '600',
     },

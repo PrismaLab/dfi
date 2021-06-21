@@ -1,7 +1,7 @@
 import { VaultPage } from './';
 
 export default {
-  path: 'vault',
+  path: '/',
   childRoutes: [
     { path: 'vault', component: VaultPage, isIndex: true },
   ],

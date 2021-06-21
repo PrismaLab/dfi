@@ -55,7 +55,7 @@ const hexToRgb = input => {
 const drawerWidth = 260;
 
 const primaryColor = [
-  "#ff2d82",
+  "#661AFF",
   "#9c27b0",
   "#ab47bc",
   "#8e24aa",
@@ -102,7 +102,7 @@ const successColor = [
   "#66bb6a"
 ];
 const infoColor = [
-  "#00acc1",
+  "#121B21",
   "#26c6da",
   "#00acc1",
   "#00d3ee",
@@ -177,7 +177,7 @@ const container = {
     maxWidth: "960px"
   },
   "@media (min-width: 1230px)": {
-    maxWidth: "1230px"    // '1230px - 30px margin = 1200px', which is better in huge display
+    maxWidth: "1240px"    // '1230px - 30px margin = 1200px', which is better in huge display
   }
 };
 

@@ -16,7 +16,7 @@ export default function SectionTitle() {
 
   return (
     <Grid container item className={classes.root} justify="center">
-      <Typography variant="h1" className={classNames(classes.title)} noWrap>{t('Vault-Title')}</Typography>
+      <Typography variant="h1" className={classNames(classes.title)} noWrap></Typography>
     </Grid>
   )
 }

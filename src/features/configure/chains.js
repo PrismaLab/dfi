@@ -174,5 +174,22 @@ export const supportedChains = [
       contractAddress: "",
       balance: ""
     }
-  }
+  },
+  {
+    name: "Matic Mainnet",
+    short_name: "matic",
+    chain: "matic",
+    network: "mainnet",
+    chain_id: 137,
+    network_id: 137,
+    rpc_url: "https://matic-mainnet-archive-rpc.bwarelabs.com/",
+    native_currency: {
+      symbol: "MATIC",
+      name: "MATIC",
+      decimals: "18",
+      contractAddress: "",
+      balance: ""
+    }
+  },
+ 
 ];

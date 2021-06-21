@@ -21,8 +21,8 @@ const headerStyle = theme => ({
     display: "flex",
     border: "0",
     borderRadius: "3px",
-    padding: "0.625rem 0",
-    marginBottom: "20px",
+    // padding: "0.625rem 0",
+    // marginBottom: "20px",
     color: grayColor[15],
     width: "100%",
     backgroundColor: whiteColor,
@@ -145,8 +145,8 @@ const headerStyle = theme => ({
     color: whiteColor
   },
   dark: {
-    color: whiteColor,
-    backgroundColor: "#2C3040",
+    color: '#121B21',
+    backgroundColor: "#F2F2F2",
     // boxShadow:
     //   "0 4px 20px 0px rgba(" +
     //   hexToRgb(blackColor) +

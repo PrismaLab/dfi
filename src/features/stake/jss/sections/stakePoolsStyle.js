@@ -3,7 +3,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableRow from '@material-ui/core/TableRow';
 
 const fontDefaultStyle = {
-    color: '#fff',
+    color: '#121B21',
     fontFamily: 'Helvetica',
     fontSize: '18px',
     letterSpacing: '0',
@@ -15,12 +15,12 @@ const secondStyle = {
   opacity: '0.4',
   fontFamily: 'Helvetica',
   fontSize: '14px',
-  color: '#FFFFFF',
+  color: '#000',
   letterSpacing: '0',
   lineHeight: '14px',
 };
 
-const normalBackgroundColor = '#2C3040';
+const normalBackgroundColor = '#F2F2F2';
 const primaryColor = '#FF2D82';
 const secondColor = '#635AFF';
 
@@ -29,6 +29,7 @@ const StyledTableCell = withStyles((theme) => ({
     ...fontDefaultStyle,
     backgroundColor: secondColor,
     height:'48px',
+    color: '#fff',
     borderColor:'rgb(40,42,55,0.5)',
     padding:'0 40px',
     '&:first-child':{
@@ -68,7 +69,7 @@ const stakePoolsStyle = theme => ({
   mainTitle:{
     fontFamily: 'Helvetica',
     fontSize: '32px',
-    color: '#FFFFFF',
+    color: '#121B21',
     letterSpacing: '0',
     lineHeight: '32px',
     fontWeight: "550",
@@ -179,7 +180,7 @@ const stakePoolsStyle = theme => ({
   detailTitle:{
     fontFamily: 'Helvetica',
     fontSize: '32px',
-    color: '#FFFFFF',
+    color: '#121B21',
     letterSpacing: '0',
     lineHeight: '32px',
     fontWeight: "550",

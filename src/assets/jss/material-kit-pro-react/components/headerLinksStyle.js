@@ -207,7 +207,7 @@ const headerLinksStyle = theme => ({
     padding: theme.spacing(1),
   },
   nowShowPage:{
-    borderBottom:'1px solid #FF2D82',
+    borderBottom:'1px solid #661AFF',
     [theme.breakpoints.down("sm")]: {
       border:'0'
     },

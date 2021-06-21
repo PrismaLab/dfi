@@ -29,6 +29,8 @@ export function fetchBalance(index) {
       const { tokenAddress } = pools[index];
       const contract = new web3.eth.Contract(erc20ABI, tokenAddress);
       contract.methods.balanceOf(address).call({ from: address }).then(
+          
+
         data => {
           dispatch({
             type: FARM_FETCH_BALANCE_SUCCESS,

@@ -2,7 +2,7 @@ import React from "react";
 // nodejs library to set properties for components
 import PropTypes from "prop-types";
 // nodejs library that concatenates classes
-import classNames from "classnames";
+// import classNames from "classnames";
 import Slider from '@material-ui/core/Slider';
 import { makeStyles } from "@material-ui/core/styles";
 

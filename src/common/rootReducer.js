@@ -21,8 +21,8 @@ const reducerMap = {
   vault: vaultReducer,
   stake: stakeReducer,
   farm: farmReducer,
-  swap: swapReducer,
-  liquidity: liquidityReducer,
+  // swap: swapReducer,
+  // liquidity: liquidityReducer,
   common: commonReducer,
 };
 

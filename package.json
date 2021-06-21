@@ -198,6 +198,7 @@
     ]
   },
   "devDependencies": {
+    "rekit": "^3.0.0",
     "terser-webpack-plugin": "^4.1.0"
   }
 }

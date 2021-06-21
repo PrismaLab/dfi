@@ -40,12 +40,13 @@ export default function App({ children }) {
             description: i18next.t('Home-BrowserWallet')
           },
         },
+        /*
         walletconnect: {
           package: WalletConnectProvider,
           options: {
             infuraId: process.env.INFURA_ID
           }
-        }
+        }*/
       }
     })
     setModal(newModal)
@@ -69,7 +70,7 @@ export default function App({ children }) {
     <SnackbarProvider>
       <div className={classes.page}>
         <Header
-          brand="YFII"
+          brand="Polymoon"
           links={
             <HeaderLinks
               dropdownHoverColor="dark"

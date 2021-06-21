@@ -17,7 +17,7 @@ const childRoutes = [
   stakeRoute,
   commonRoute,
   farmRoute,
-  liquidityRoute
+  // liquidityRoute
   // zapRoute,
 ];
 
