@@ -42,7 +42,7 @@ export default function HeaderLinks(props) {
     {value:'vault',label:t('Nav-Vault')},
     {value:'stake',label:t('Nav-Stake')},
     {value:'farm',label:t('Nav-Farm')},
-    //{value:'liquidity',label:t('Nav-lp')},
+    // {value:'liquidity',label:t('Nav-lp')},
   ]
 
   useEffect(() => {
@@ -57,7 +57,7 @@ export default function HeaderLinks(props) {
       setShortAddress(address)
     } else {
       setShortAddress(`${address.slice(0, 6)}...${address.slice(-4)}`)
-    }  
+    }
   }, [dataUrl, address])
 
   const switchLanguage = () => {
@@ -113,22 +113,47 @@ export default function HeaderLinks(props) {
   if(window.location.hash != '#/' && window.location.hash!='#/index'){
     defaultTabValue = window.location.hash.split('/')[1];
   }
-  
+  function tabListItem(item,index) {
+    return (
+        <ListItem key={'tab-'+index} className={classes.listItem}>
+          <Button
+              type="button"
+              color="transparent"
+              onClick={changeTabs.bind(this,item.value)}
+              className={item.value == defaultTabValue ? classes.nowShowPage : ''}
+          >
+            {t(item.label)}
+          </Button>
+        </ListItem>
+    );
+  }
+
+  function tabListItemComing(item,index) {
+    return (
+        <ListItem key={'tab-'+index} className={classes.listItem}>
+          <Button
+              type="button"
+              color="transparent"
+              className={item.value == defaultTabValue ? classes.nowShowPage : ''}
+          >
+            {t(item.label)}
+          </Button>
+        </ListItem>
+    );
+  }
   return (
     <List className={classes.list + " " + classes.mlAuto}>
       {
-        tabArr.map((item,index)=>(
-          <ListItem key={'tab-'+index} className={classes.listItem}>
-            <Button
-                type="button"
-                color="transparent"
-                onClick={changeTabs.bind(this,item.value)}
-                className={item.value == defaultTabValue ? classes.nowShowPage : ''}
-              >
-                {t(item.label)}
-              </Button>
-          </ListItem>
-        ))
+        tabArr.map((item,index)=>{
+          let button;
+          if (item.value === 'stake'){
+              button = tabListItemComing(item,index);
+          }else {
+              button = tabListItem(item, index);
+          }
+          return button
+        }
+        )
       }
       <ListItem className={classes.listItem}>
         <CustomDropdown

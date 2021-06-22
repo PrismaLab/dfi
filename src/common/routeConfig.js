@@ -14,7 +14,7 @@ import _ from 'lodash';
 const childRoutes = [
   homeRoute,
   vaultRoute,
-  stakeRoute,
+  // stakeRoute,
   commonRoute,
   farmRoute,
   // liquidityRoute
