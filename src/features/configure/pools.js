@@ -26,8 +26,8 @@ export const pools = [
         tokenDescriptionUrl: 'https://docs.dfi.money/#/using-crv?id=how-to-get-ycrv',
         tokenDescriptionUrl2: 'https://docs.dfi.money/#/zh-cn/buy-tokens?id=_5-ycrv%e5%85%91%e6%8d%a2',
         earnedToken: 'iUSDT',
-        earnedTokenAddress: '0xA4eB6589CF0031f384Af796711078E2C3c8Bf187',
-        earnContractAddress: '0xA4eB6589CF0031f384Af796711078E2C3c8Bf187',
+        earnedTokenAddress: '0x387F73238a7c710D4838DdCEe0b04beA59548698',
+        earnContractAddress: '0x387F73238a7c710D4838DdCEe0b04beA59548698',
         defaultApy: "42.63",
         pricePerFullShare: 1,
         pastPricePerFullShare: 1
