@@ -69,7 +69,7 @@ export default function Header(props) {
     <AppBar className={appBarClasses}>
       <Toolbar className={classes.container}>
         <Button className={classes.title}>
-          <Avatar alt="Polymoon" src={require(`../../images/Polymoon-logo.png`)} />
+          <Avatar alt="Polymars" src={require(`../../images/Polymoon-logo.png`)} />
           <Link to="/">
             {brand}
           </Link>

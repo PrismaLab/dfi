@@ -70,7 +70,7 @@ export default function App({ children }) {
     <SnackbarProvider>
       <div className={classes.page}>
         <Header
-          brand="Polymoon"
+          brand="Polymars"
           links={
             <HeaderLinks
               dropdownHoverColor="dark"
