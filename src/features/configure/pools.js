@@ -13,7 +13,7 @@ import BigNumber from "bignumber.js";
 // price ： 挖的代币的价格！
 // path price: 
 export const pools = [
-    /*
+    
     {
         chainId: 137,
         id: 'wmatic',
@@ -27,13 +27,13 @@ export const pools = [
         tokenDescriptionUrl: '',
         tokenDescriptionUrl2: '',
         earnedToken: 'iWMATIC',
-        earnedTokenAddress: '0xe52454d58f95CCFEe4D9064D22C22A1e87d15437',
-        earnContractAddress: '0xe52454d58f95CCFEe4D9064D22C22A1e87d15437',
+        earnedTokenAddress: '0xd71f14663737529C73d0dfD3cF66Fe3264056A50',
+        earnContractAddress: '0xd71f14663737529C73d0dfD3cF66Fe3264056A50',
         defaultApy: "42.63",
         pricePerFullShare: 1,
         pastPricePerFullShare: 1
       },
-      */
+    
       {
         chainId: 137,
         id: 'dai',

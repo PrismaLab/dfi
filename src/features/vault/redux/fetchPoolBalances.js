@@ -6,7 +6,7 @@ import {
   VAULT_FETCH_POOL_BALANCES_SUCCESS,
   VAULT_FETCH_POOL_BALANCES_FAILURE,
 } from './constants';
-import { fetchPricePerFullShare, fetchAllowance } from "../../web3";
+import { fetchPricePerFullShare, fetchAllowance, fetchVaultBalance } from "../../web3";
 import async from 'async';
 
 export function fetchPoolBalances(data) {
@@ -61,6 +61,23 @@ export function fetchPoolBalances(data) {
                 return callbackInner(error, 0)
               }
             ) 
+          },
+          (callbackInner) => { 
+            fetchVaultBalance({
+              contract: earnContract,
+              address,
+              decimal: pool.tokenDecimals,
+            }).then(
+              data => {
+                // console.log(data)
+                return callbackInner(null, data)
+              }
+            ).catch(
+              error => {
+                // console.log(error)
+                return callbackInner(error, 0)
+              }
+            ) 
           }
         ], (error, data) => {
             if (error) {
@@ -68,6 +85,7 @@ export function fetchPoolBalances(data) {
             }
             pool.allowance = data[0] || 0;
             pool.pricePerFullShare = data[1] || 1;
+            pool.tvl = data[2] || 0;
             callback(null, pool);
         })
       }, (error, pools) => {

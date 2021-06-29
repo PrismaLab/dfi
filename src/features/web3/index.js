@@ -9,3 +9,4 @@ export { withdrawEth } from './withdrawEth';
 export { fetchPricePerFullShare } from './fetchPricePerFullShare';
 export { zapOrSwap } from './zapOrSwap';
 export { statke } from './stake';
+export { fetchVaultBalance } from './fetchVaultBalance';

@@ -278,6 +278,7 @@ export default function SectionPools() {
             // singleDepositedBalance = byDecimals(random(1, 1000000), 1)
             // singleDepositedBalance = new BigNumber(random(1, 1000))
             let depositedApy = contractApy[pool.id] || 0;
+            let tvl = forMat(pool.tvl) || '---';
             // depositedApy = random(0, 1)
             // depositedApy =byDecimals(random(0, 100), 1)
             return (
@@ -344,6 +345,15 @@ export default function SectionPools() {
                                             </Grid>
                                         </Grid>
                                     </Hidden>
+                                    
+                                    {/*
+                                    <Grid item xs={12} md={1} container justify='center' alignItems="center">
+                                        <Grid item>
+                                            <Typography className={classes.iconContainerMainTitle} variant="body2" gutterBottom noWrap> {tvl}</Typography>
+                                            <Typography className={classes.iconContainerSubTitle} variant="body2">TVL</Typography>
+                                        </Grid>
+                                    </Grid>
+                                    */}
                                     <Grid item xs={12} md={1} container justify='center' alignItems="center">
                                         <Grid item>
                                             <Typography className={classes.iconContainerMainTitle} variant="body2" gutterBottom noWrap> {depositedApy}</Typography>
