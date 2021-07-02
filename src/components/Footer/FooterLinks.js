@@ -48,7 +48,8 @@ const footerLinkArr = [
     //{content:'Link.Audit',href:'https://github.com/yfii/audit'},
     //{content:'Link.Stats',href:'https://stats.dfi.money/'},
     //{content:'Link.Voting',href:'https://voting.dfi.money/#/dfi'},
-    //{content:'Link.Documentation',href:'https://docs.dfi.money/'},
+    {content:'Link.Documentation',href:'https://app.gitbook.com/@polymars-finance/s/polymars-finance/'},
+    {content:'Medium',href:'https://app.gitbook.com/@polymars-finance/s/polymars-finance/'},
     //{content:'Link.Uniswap',href:'https://app.uniswap.org/#/swap?outputCurrency=0xa1d0E215a23d7030842FC67cE582a6aFa3CCaB83'},
     //{content:'Link.v1Vault',href:'https://v1.dfi.money/'},
     //{content:'Link.oldVault',href:'https://old.dfi.money/'},
@@ -94,14 +95,14 @@ export default function FooterLinks(props) {
 
     return (
         <div className={badgeClasses}>
-            {/* <List className={classes.list}>
+            { <List className={classes.list}>
                 <ListItem className={classes.listItem}>
                     <Button
                     color={color}
                     className={
                         classes.navLink + " " + classes.socialIconsButton
                     }
-                    href="https://twitter.com/DfiMoney"
+                    href="https://twitter.com/PolymarsFinance"
                     target="_blank"
                     >
                     <i
@@ -118,7 +119,7 @@ export default function FooterLinks(props) {
                     className={
                         classes.navLink + " " + classes.socialIconsButton
                     }
-                    href="https://t.me/yfiifinance"
+                    href="https://t.me/polymarsfinance"
                     target="_blank"
                     >
                     <i
@@ -129,6 +130,7 @@ export default function FooterLinks(props) {
                     />
                     </Button>
                 </ListItem>
+                {/*
                 <ListItem className={classes.listItem}>
                     <Button
                     color={color}
@@ -146,13 +148,14 @@ export default function FooterLinks(props) {
                     />
                     </Button>
                 </ListItem>
+                    */}
                 <ListItem className={classes.listItem}>
                     <Button
                     color={color}
                     className={
                         classes.navLink + " " + classes.socialIconsButton
                     }
-                    href="https://github.com/yfii"
+                    href=""
                     target="_blank"
                     >
                     <i
@@ -163,6 +166,7 @@ export default function FooterLinks(props) {
                     />
                     </Button>
                 </ListItem>
+                {/*
                 <ListItem className={classes.listItem}>
                     <Button
                     color={color}
@@ -203,7 +207,8 @@ export default function FooterLinks(props) {
                     <Avatar variant="square" alt="YFII" src={require(`../../images/wechat.png`)} style={{width: "80px", height: "80px"}}/>
                     </Popover>
                 </ListItem>
-            </List> */}
+                */}
+            </List> }
             <GridContainer className={classes.linkList} justify='center' align='center' >
                 {
                     footerLinkArr.map((item)=>{
